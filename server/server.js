@@ -2,19 +2,27 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const mongoose = require('../database/database');
-// console.log(mongoose.model);
-// const MyModel = mongoose.model('Yumly');
-// console.log(MyModel);
-
-
+const bodyParser = require('body-parser');
+const restaurantData = require('../database/database');
+console.log(restaurantData);
 // middleware
+    // parse application/x-www-form-urlencoded
+    app.use(bodyParser.urlencoded({ extended: false }))
+
+    // parse application/json
+    app.use(bodyParser.json())
 
 // routes
-
-app.get('/restuarant', (req, res) => {
-    mongoose.model.find({name: "Chad"});
-    res.send('Hello World!');
+app.get('/restaurants', (req, res) => {
+    restaurantData.find({}, function (err, docs) {
+        if(err){
+            console.log('error get request', err);
+            res.end();
+        } else {
+            console.log('successful get:', docs);
+            res.send(docs);
+        }
+      });
     });
 
 // listen
