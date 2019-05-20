@@ -4,8 +4,10 @@ const app = express();
 const port = 3000;
 const bodyParser = require('body-parser');
 const restaurantData = require('../database/database');
-console.log(restaurantData);
-// middleware
+// console.log(restaurantData);
+// // middleware
+    // app.use(express.static(path.join(__dirname, './src')));
+
     // parse application/x-www-form-urlencoded
     app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -13,8 +15,12 @@ console.log(restaurantData);
     app.use(bodyParser.json())
 
 // routes
+app.get('/', (req, res) => {
+    res.send('Hey! Cramer')
+  })
+
 app.get('/restaurants', (req, res) => {
-    restaurantData.find({}, function (err, docs) {
+    restaurantData.find({foodScore: 4}, function (err, docs) {
         if(err){
             console.log('error get request', err);
             res.end();

@@ -4,7 +4,7 @@ const fs = require('fs');
 
 mongoose.connect('mongodb://localhost/Yumly', {useNewUrlParser: true}, (err) => {
     if(err){
-        console.log('error connecting to mongodb');
+        console.log('error connecting to mongodb: ', err);
     } else {
         console.log("successful connection to mongodb");
     }
