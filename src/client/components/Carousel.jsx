@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function Carousel (props) {
-    return (
-      <div className="Carousel">
-        <h2>Carousel component</h2> 
-      </div>
-    )
+class CarouselComponent extends React.Component {
+    render() {
+        return (
+           <h1>carouselComponent</h1>
+        )}
   }
 
-  export default Carousel;
+  export default CarouselComponent;
