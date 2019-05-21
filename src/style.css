@@ -1,3 +1,7 @@
+#root {
+    padding: 50px;
+    text-align: center;
+}
 
 .App {
     border: 2px solid black;
@@ -18,6 +22,7 @@
 .Description {
     border: 2px solid black;
 }
+
 
 /* Carousel */
 .slider {
