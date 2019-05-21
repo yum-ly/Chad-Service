@@ -1,3 +1,4 @@
+
 .App {
     border: 2px solid black;
 }
@@ -16,4 +17,10 @@
 
 .Description {
     border: 2px solid black;
+}
+
+/* Carousel */
+.slider {
+    width: 200px;
+    padding: 10px;
 }
