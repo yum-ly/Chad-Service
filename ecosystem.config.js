@@ -1,6 +1,6 @@
 module.exports = {
     apps: [{
-      name: 'Chad-Service',
+      name: 'Chad',
       script: './server/server.js'
     }],
     deploy: {
@@ -10,7 +10,7 @@ module.exports = {
         key: '~/.ssh/fec.pem',
         ref: 'origin/master',
         repo: 'https://github.com/yum-ly/Chad-Service.git',
-        path: '/home/ubuntu/Chad-Service',
+        path: '/home/ubuntu/service',
         'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
       }
     }
