@@ -22,9 +22,9 @@ const path = require('path');
     app.use(bodyParser.json())
  
 // routes
-app.get('/', (req, res) => {
-    res.send('Hey! Cramer')
-  })
+// app.get('/', (req, res) => {
+//     res.send('Hey! Cramer')
+//   })
 
 app.get('/restaurants', (req, res) => {
     restaurantData.find({foodScore: 4}, function (err, docs) {
