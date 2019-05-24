@@ -23,7 +23,7 @@ const path = require('path');
  
 // routes
 app.get('/', (req, res) => {
-    res.send('Hey! Cramer')
+    res.send('Hello there')
   })
 
 app.get('/restaurants', (req, res) => {
