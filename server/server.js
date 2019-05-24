@@ -7,7 +7,7 @@ const restaurantData = require('../database/database');
 const path = require('path');
 // console.log(restaurantData);
 // // middleware
-    app.use(express.static('dist'));
+    app.use('/', express.static('dist'));
 
     // app.use(function(req, res, next) {
     //     res.header("Access-Control-Allow-Origin", "*");
