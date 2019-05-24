@@ -23,7 +23,7 @@ const path = require('path');
  
 // routes
 app.get('/', (req, res) => {
-    const temp = path.join(__dirname/dist);
+    const temp = path.join(__dirname, 'dist');
     console.log('TEMP VARIABLE ', temp);
     res.send(temp);
   })
