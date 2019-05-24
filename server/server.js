@@ -4,9 +4,16 @@ const app = express();
 const port = 3000;
 const bodyParser = require('body-parser');
 const restaurantData = require('../database/database');
+const path = require('path');
 // console.log(restaurantData);
 // // middleware
-    app.use(express.static(path.join(__dirname, './dist')));
+    app.use(express.static(path.join('dist')));
+
+    // app.use(function(req, res, next) {
+    //     res.header("Access-Control-Allow-Origin", "*");
+    //     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    //     next();
+    //   });
 
     // parse application/x-www-form-urlencoded
     app.use(bodyParser.urlencoded({ extended: false }))
