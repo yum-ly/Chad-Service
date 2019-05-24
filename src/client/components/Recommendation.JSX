@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Restaurant from './Restaurant';
+import Restaurant from './Restaurant.jsx';
 
 function Recommendation (props) {
       return (

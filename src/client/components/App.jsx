@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Recommendation from './Recommendation';
+import Recommendation from './Recommendation.jsx';
 
 class App extends React.Component {
     constructor(props) {
