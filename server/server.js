@@ -23,7 +23,9 @@ const path = require('path');
  
 // routes
 app.get('/', (req, res) => {
-    res.send('Hello there')
+    const temp = path.join(__dirname/dist);
+    console.log('TEMP VARIABLE ', temp);
+    res.send(temp);
   })
 
 app.get('/restaurants', (req, res) => {
