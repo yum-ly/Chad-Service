@@ -9,6 +9,10 @@
 
 .Recommendation {
     border: 2px solid black;
+    /* -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row; */
 }
 
 .Restaurant {
