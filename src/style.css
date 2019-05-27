@@ -9,10 +9,6 @@
 
 .Recommendation {
     border: 2px solid black;
-    /* -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    flex-direction: row; */
 }
 
 .Restaurant {
@@ -28,8 +24,7 @@
 }
 
 
-/* Carousel */
-.slider {
-    width: 200px;
-    padding: 10px;
+img.slider {
+    max-width:100%;
+    height:auto;
 }

@@ -35,7 +35,7 @@ class Carousel extends React.Component {
         prevArrow: <SamplePrevArrow />
       };
       return (
-        <div>
+        <div className='Carousel'>
           <Slider {...settings}>
             <div>
                 <img className="slider" src="https://pixel.nymag.com/imgs/daily/selectall/2018/12/26/snapdog_00.w700.h700.jpg" />
