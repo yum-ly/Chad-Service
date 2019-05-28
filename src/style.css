@@ -1,34 +1,37 @@
-#root {
-    padding: 50px;
-    text-align: center;
-    height: 600px;
-    width: 600px;
+body {
+    background: #eee;
 }
-
-
 
 .App {
-    border: 2px solid black;
+    background-color: #fff;
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
 }
 
+/* container */
 .Recommendation {
-    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .Restaurant {
-    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex-basis: 45%;
 }
 
 .Carousel {
-    border: 2px solid black;
+
+}
+
+img {
+    height: 200px;
+    width: 200px;
 }
 
 .Description {
-    border: 2px solid black;
-}
-
-
-img.slider {
-    max-width:100%;
-    height:auto;
 }
