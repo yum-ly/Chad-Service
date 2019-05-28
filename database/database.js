@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const fs = require('fs');
+const uri = require('./atlasinfo.js');
 
-mongoose.connect('mongodb://localhost/Yumly', {useNewUrlParser: true}, (err) => {
+mongoose.connect(uri, {useNewUrlParser: true}, (err) => {
     if(err){
         console.log('error connecting to mongodb: ', err);
     } else {
@@ -35,6 +36,6 @@ const seed = () => {fs.readFile('../data.json', (err, data) => {
         })
     }
 )}
-
+// seed();
 
 module.exports = restaurantData;
