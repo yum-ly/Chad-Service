@@ -5,6 +5,7 @@ const port = 3000;
 const bodyParser = require('body-parser');
 const restaurantData = require('../database/database');
 const path = require('path');
+
 // console.log(restaurantData);
 // // middleware
     app.use('/', express.static('dist'));

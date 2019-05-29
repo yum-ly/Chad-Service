@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const fs = require('fs');
-const uri = require('./atlasinfo.js');
+const dbinfo = require('./atlasinfo.js');
 
-mongoose.connect(uri, {useNewUrlParser: true}, (err) => {
+mongoose.connect(dbinfo.uri, {useNewUrlParser: true}, (err) => {
     if(err){
         console.log('error connecting to mongodb: ', err);
     } else {
