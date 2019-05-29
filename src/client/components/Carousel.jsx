@@ -12,7 +12,7 @@ class Carousel extends React.Component {
     this.handleGetImage();
   }
 
-  // ajax get image request 
+  // ajax get image request using axios
   handleGetImage () {
     let awsURL = 'http://ec2-52-14-174-92.us-east-2.compute.amazonaws.com/';
     axios.get(`${awsURL}restaurants`)
