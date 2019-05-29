@@ -35,6 +35,12 @@ img {
     width: 200px;
 }
 
+.slick-list {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
 .Description {
     border: 1px solid black;
 }

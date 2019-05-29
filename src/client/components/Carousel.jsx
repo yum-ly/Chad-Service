@@ -12,27 +12,26 @@ class Carousel extends React.Component {
     };
     return (
       <div className="Carousel">
-        <img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?cs=srgb&dl=animal-dog-maltese-33053.jpg&fm=jpg" />
-        {/* <Slider {...settings}> */}
-          {/* <div>
-            <h3>1</h3>
+        <Slider {...settings}> 
+          <div>
+            <img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?cs=srgb&dl=animal-dog-maltese-33053.jpg&fm=jpg"/>
           </div>
           <div>
-            <h3>2</h3>
+            <img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?cs=srgb&dl=animal-dog-maltese-33053.jpg&fm=jpg"/>
           </div>
           <div>
-            <h3>3</h3>
+            <img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?cs=srgb&dl=animal-dog-maltese-33053.jpg&fm=jpg"/>
           </div>
           <div>
-            <h3>4</h3>
+            <img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?cs=srgb&dl=animal-dog-maltese-33053.jpg&fm=jpg"/>
           </div>
           <div>
-            <h3>5</h3>
+            <img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?cs=srgb&dl=animal-dog-maltese-33053.jpg&fm=jpg"/>
           </div>
           <div>
-            <h3>6</h3>
+            <img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?cs=srgb&dl=animal-dog-maltese-33053.jpg&fm=jpg"/>
           </div>
-        </Slider> */}
+        </Slider>
       </div>
     );
   }
