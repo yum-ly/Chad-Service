@@ -28,3 +28,6 @@ build/
 # data folder
 data
 
+# atlasinfo 
+
+database/atlasinfo.js
