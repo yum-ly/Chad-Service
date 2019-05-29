@@ -18,6 +18,8 @@ body {
 .Restaurant {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
     border: 1px solid black;
     padding: 20px;
     margin-bottom: 20px;
@@ -34,4 +36,5 @@ img {
 }
 
 .Description {
+    border: 1px solid black;
 }
