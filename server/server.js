@@ -29,13 +29,13 @@ app.get('/', (req, res) => {
   })
 
 app.get('/restaurants', (req, res) => {
-    restaurantData.find({foodScore: 4}, function (err, docs) {
+    restaurantData.findOne({uuid: 10}, function (err, docs) {
         if(err){
             console.log('error get request', err);
             res.end();
         } else {
             console.log('successful get:', docs);
-            res.send(docs);
+            res.send(docs.images[0]);
         }
       });
     });
