@@ -30,16 +30,21 @@ app.get('/', (req, res) => {
   })
 
 app.get('/restaurants', (req, res) => {
-    restaurantData.findOne({uuid: 10}, function (err, docs) {
+    restaurantData.find({}, (err, items) => {
         if(err){
-            console.log('error get request', err);
+            console.log(err);
             res.end();
         } else {
-            console.log('successful get:', docs);
-            res.send(docs.images[0]);
+            let randomRestaurants = [];
+            for(let i = 0; i < 6; i++){
+                let myUUID = Math.floor(Math.random() * 100);
+                randomRestaurants.push(items.splice(myUUID, 1)[0]);
+            }
+            let results = randomRestaurants.map((obj) => obj.images)
+            res.send(results);
         }
-      });
-    });
+    })
+});
 
 // listen
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

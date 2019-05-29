@@ -3,15 +3,13 @@ import ReactDOM from 'react-dom';
 import Carousel from './Carousel.jsx';
 import Description from './Description.jsx';
 
-class Restaurant extends React.Component {
-
-    render () {
+function Restaurant (props) {
       return (
       <div className="Restaurant">
-        < Carousel />
+        < Carousel pics={props.pics}/>
         < Description />
       </div>
-      )}
+      )
   }
 
   export default Restaurant;

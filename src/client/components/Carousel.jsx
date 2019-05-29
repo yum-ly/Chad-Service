@@ -1,33 +1,9 @@
 import React from 'react';
 import Slider from "react-slick";
-import axios from 'axios';
 
 class Carousel extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { img: [null, null, null, null, null, null] }
-  }
 
-  componentDidMount(){
-    this.handleGetImage();
-  }
-
-  // ajax get image request using axios
-  handleGetImage () {
-    axios.get('/restaurants')
-    .then( (response) => {
-      // handle success
-      console.log('success carousel image get:', response.data);
-      this.setState({img: [response.data]});
-      return response.data;
-    })
-    .catch( (error) => {
-      // handle error
-      console.log('error getting image for carousel:',error);
-    })
-  }
-
-  render() {
+  render(props) {
     const settings = {
       infinite: true,
       speed: 500,
@@ -38,23 +14,40 @@ class Carousel extends React.Component {
     return (
       <div className="Carousel">
         <Slider {...settings}> 
+          {/* <div>
+            {this.props.pics.map((pic) => {
+              <img src={pic}/>
+            })}
+          </div> */}
           <div>
-            <img src={this.state.img[0]}/>
+            <img src={this.props.pics[0]}/>
           </div>
           <div>
-            <img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?cs=srgb&dl=animal-dog-maltese-33053.jpg&fm=jpg"/>
+            <img src={this.props.pics[1]}/>
           </div>
           <div>
-            <img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?cs=srgb&dl=animal-dog-maltese-33053.jpg&fm=jpg"/>
+            <img src={this.props.pics[2]}/>
           </div>
           <div>
-            <img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?cs=srgb&dl=animal-dog-maltese-33053.jpg&fm=jpg"/>
+            <img src={this.props.pics[3]}/>
           </div>
           <div>
-            <img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?cs=srgb&dl=animal-dog-maltese-33053.jpg&fm=jpg"/>
+            <img src={this.props.pics[4]}/>
           </div>
           <div>
-            <img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?cs=srgb&dl=animal-dog-maltese-33053.jpg&fm=jpg"/>
+            <img src={this.props.pics[5]}/>
+          </div>
+          <div>
+            <img src={this.props.pics[6]}/>
+          </div>
+          <div>
+            <img src={this.props.pics[7]}/>
+          </div>
+          <div>
+            <img src={this.props.pics[8]}/>
+          </div>
+          <div>
+            <img src={this.props.pics[9]}/>
           </div>
         </Slider>
       </div>
