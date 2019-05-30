@@ -57,6 +57,24 @@ hr {
 
 }
 
+.slick-prev:before{
+    color: purple
+
+}
+.slick-prev:before:hover{
+    color: red;
+
+}
+
+.slick-next:before {
+    color: green;
+}
+
+.slick-next:hover {
+    color: red;
+}
+
+
 img {
     box-sizing: border-box;
     color: rgb(33, 37, 41);
