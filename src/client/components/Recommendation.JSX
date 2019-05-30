@@ -7,21 +7,17 @@ import axios from 'axios';
 class Recommendation extends React.Component {
       constructor(props) {
             super(props);
-            this.state = { 
-                  images: [],
-                  name:[],
-                  bld: [],
-                  address: [],
-                  foodScore: [],
+            this.state = {restaurants: 
+                  [],
             };
       }
             
       componentDidMount(){
             this.handleGetImage();
-            this.handleName();
-            this.handleBLD();
-            this.handleAddress();
-            this.handleFoodScore();
+            // this.handleName();
+            // this.handleBLD();
+            // this.handleAddress();
+            // this.handleFoodScore();
       }
             
       // get image 
@@ -29,69 +25,82 @@ class Recommendation extends React.Component {
             axios.get('/images')
             .then( (response) => {
             // handle success
-            this.setState({images: response.data});
+            this.setState({restaurants: response.data});
             })
             .catch( (error) => {
             // handle error
             console.log('error getting image:', error);
             })
       }
-      // get name
-      handleName(){
-            axios.get('/name')
-            .then( (response) => {
-            // handle success
-            this.setState({name: response.data});
-            })
-            .catch( (error) => {
-            // handle error
-            console.log('error getting name:', error);
-            })
-      }
-      // get bld
-      handleBLD(){
-            axios.get('/bld')
-            .then( (response) => {
-            // handle success
-            this.setState({bld: response.data});
-            })
-            .catch( (error) => {
-            // handle error
-            console.log('error getting bld:', error);
-            })
-      }
-      // get address
-      handleAddress(){
-            axios.get('/address')
-            .then( (response) => {
-            // handle success
-            this.setState({address: response.data});
-            })
-            .catch( (error) => {
-            // handle error
-            console.log('error getting address:', error);
-            })
-      }
-      // get foodScore
-      handleFoodScore(){
-            axios.get('/foodScore')
-            .then( (response) => {
-            // handle success
-            this.setState({foodScore: response.data});
-            })
-            .catch( (error) => {
-            // handle error
-            console.log('error getting foodScore:', error);
-            })
-      }
+      // // get name
+      // handleName(){
+      //       axios.get('/name')
+      //       .then( (response) => {
+      //       let myData = this.state.restaurant;
+      //       myData.splice(1, 1, response.data);
+      //       // handle success
+      //       this.setState({restaurant: myData});
+      //       })
+      //       .catch( (error) => {
+      //       // handle error
+      //       console.log('error getting name:', error);
+      //       })
+      // }
+      // // get bld
+      // handleBLD(){
+      //       axios.get('/bld')
+      //       .then( (response) => {
+      //       let myData = this.state.restaurant;
+      //       myData.splice(2, 1, response.data);
+      //       // handle success
+      //       this.setState({restaurant: myData});
+      //       })
+      //       .catch( (error) => {
+      //       // handle error
+      //       console.log('error getting bld:', error);
+      //       })
+      // }
+      // // get address
+      // handleAddress(){
+      //       axios.get('/address')
+      //       .then( (response) => {
+      //       let myData = this.state.restaurant;
+      //       myData.splice(3, 1, response.data);
+      //       // handle success
+      //       this.setState({restaurant: myData});
+      //       })
+      //       .catch( (error) => {
+      //       // handle error
+      //       console.log('error getting address:', error);
+      //       })
+      // }
+      // // get foodScore
+      // handleFoodScore(){
+      //       axios.get('/foodScore')
+      //       .then( (response) => {
+      //       let myData = this.state.restaurant;
+      //       myData.splice(4, 1, response.data);
+      //       // handle success
+      //       this.setState({restaurant: myData});
+      //       })
+      //       .catch( (error) => {
+      //       // handle error
+      //       console.log('error getting foodScore:', error);
+      //       })
+      // }
 
       render() {
       return (
       <div className="Recommendation">
-            {this.state.images.map((img, key) => (
-                  <Restaurant pics={img} key={key}/>
+            {this.state.restaurants.map((data, key) => (
+                  <Restaurant data={data} key={key}/>
             ))}
-            {/* DONT BE FANCY AND RENDER EACH RESTAURANT INDIVIDUALLY, PASSING IN ALL THEY NEED FOR STATE */}
+            {/* < Restaurant images={this.state.restaurant}/>  */}
+            {/* < Restaurant images={this.state.images}/> 
+            < Restaurant images={this.state.images}/> 
+            < Restaurant images={this.state.images}/> 
+            < Restaurant images={this.state.images}/> 
+            < Restaurant images={this.state.images}/>  */}
       </div>
       )}
   }

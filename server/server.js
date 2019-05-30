@@ -37,82 +37,82 @@ app.get('/images', (req, res) => {
         } else {
             let randomRestaurants = [];
             for(let i = 0; i < 6; i++){
-                let myUUID = Math.ceil(Math.random() * 100);
+                let myUUID = Math.ceil(Math.random() * 20);
                 randomRestaurants.push(items.splice(myUUID, 1)[0]);
             }
-            let results = randomRestaurants.map((obj) => obj.images)
+            let results = randomRestaurants.map((obj) => obj)
             res.send(results);
         }
     })
 });
 
-app.get('/name', (req, res) => {
-    restaurantData.find({}, (err, items) => {
-        if(err){
-            console.log(err);
-            res.end();
-        } else {
-            let randomRestaurants = [];
-            for(let i = 0; i < 6; i++){
-                let myUUID = Math.ceil(Math.random() * 100);
-                randomRestaurants.push(items.splice(myUUID, 1)[0]);
-            }
-            let results = randomRestaurants.map((obj) => obj.name)
-            res.send(results);
-        }
-    })
-});
+// app.get('/name', (req, res) => {
+//     restaurantData.find({}, (err, items) => {
+//         if(err){
+//             console.log(err);
+//             res.end();
+//         } else {
+//             let randomRestaurants = [];
+//             for(let i = 0; i < 6; i++){
+//                 let myUUID = Math.ceil(Math.random() * 20);
+//                 randomRestaurants.push(items.splice(myUUID, 1)[0]);
+//             }
+//             let results = randomRestaurants.map((obj) => obj.name)
+//             res.send(results);
+//         }
+//     })
+// });
 
-app.get('/bld', (req, res) => {
-    restaurantData.find({}, (err, items) => {
-        if(err){
-            console.log(err);
-            res.end();
-        } else {
-            let randomRestaurants = [];
-            for(let i = 0; i < 6; i++){
-                let myUUID = Math.ceil(Math.random() * 100);
-                randomRestaurants.push(items.splice(myUUID, 1)[0]);
-            }
-            let results = randomRestaurants.map((obj) => obj.bld)
-            res.send(results);
-        }
-    })
-});
+// app.get('/bld', (req, res) => {
+//     restaurantData.find({}, (err, items) => {
+//         if(err){
+//             console.log(err);
+//             res.end();
+//         } else {
+//             let randomRestaurants = [];
+//             for(let i = 0; i < 6; i++){
+//                 let myUUID = Math.ceil(Math.random() * 20);
+//                 randomRestaurants.push(items.splice(myUUID, 1)[0]);
+//             }
+//             let results = randomRestaurants.map((obj) => obj.bld)
+//             res.send(results);
+//         }
+//     })
+// });
 
-app.get('/address', (req, res) => {
-    restaurantData.find({}, (err, items) => {
-        if(err){
-            console.log(err);
-            res.end();
-        } else {
-            let randomRestaurants = [];
-            for(let i = 0; i < 6; i++){
-                let myUUID = Math.ceil(Math.random() * 100);
-                randomRestaurants.push(items.splice(myUUID, 1)[0]);
-            }
-            let results = randomRestaurants.map((obj) => obj.address)
-            res.send(results);
-        }
- })
+// app.get('/address', (req, res) => {
+//     restaurantData.find({}, (err, items) => {
+//         if(err){
+//             console.log(err);
+//             res.end();
+//         } else {
+//             let randomRestaurants = [];
+//             for(let i = 0; i < 6; i++){
+//                 let myUUID = Math.ceil(Math.random() * 20);
+//                 randomRestaurants.push(items.splice(myUUID, 1)[0]);
+//             }
+//             let results = randomRestaurants.map((obj) => obj.address)
+//             res.send(results);
+//         }
+//  })
 
-app.get('/foodScore', (req, res) => {
-    restaurantData.find({}, (err, items) => {
-        if(err){
-            console.log(err);
-            res.end();
-        } else {
-            let randomRestaurants = [];
-            for(let i = 0; i < 6; i++){
-                let myUUID = Math.ceil(Math.random() * 100);
-                randomRestaurants.push(items.splice(myUUID, 1)[0]);
-            }
-            let results = randomRestaurants.map((obj) => obj.foodScore)
-            res.send(results);
-        }
-    })
-});
-});
+// app.get('/foodScore', (req, res) => {
+//     restaurantData.find({}, (err, items) => {
+//         if(err){
+//             console.log(err);
+//             res.end();
+//         } else {
+//             let randomRestaurants = [];
+//             for(let i = 0; i < 6; i++){
+//                 let myUUID = Math.ceil(Math.random() * 20);
+//                 randomRestaurants.push(items.splice(myUUID, 1)[0]);
+//             }
+//             let results = randomRestaurants.map((obj) => obj.foodScore)
+//             res.send(results);
+//         }
+//     })
+// });
+// });
 
 // listen
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
