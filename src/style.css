@@ -122,8 +122,16 @@ img {
     letter-spacing: 1.548px;
     line-height: 20px;
     text-size-adjust: 100%;
-    text-transform: uppercase;
+    text-transform: uppercase;    
 }
+
+.Description #name:hover {
+    border-bottom: 1px solid maroon;
+}
+
+
+
+
 .Description #bld {
     color: rgb(101, 102, 102);
     cursor: pointer;
@@ -173,5 +181,4 @@ img {
     line-height: 20px;
     padding-top: 3px;
     text-size-adjust: 100%;
-
 }

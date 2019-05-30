@@ -92,7 +92,6 @@ class Recommendation extends React.Component {
       render() {
       return (
       <div className="Recommendation">
-            {/* <div id='nearby'>More Breakfast Nearby</div> */}
             {this.state.restaurants.map((data, key) => (
                   <Restaurant data={data} key={key}/>
             ))}
