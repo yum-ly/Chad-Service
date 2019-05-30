@@ -37,7 +37,7 @@ app.get('/images', (req, res) => {
         } else {
             let randomRestaurants = [];
             for(let i = 0; i < 6; i++){
-                let myUUID = Math.floor(Math.random() * 100);
+                let myUUID = Math.ceil(Math.random() * 100);
                 randomRestaurants.push(items.splice(myUUID, 1)[0]);
             }
             let results = randomRestaurants.map((obj) => obj.images)
@@ -54,7 +54,7 @@ app.get('/name', (req, res) => {
         } else {
             let randomRestaurants = [];
             for(let i = 0; i < 6; i++){
-                let myUUID = Math.floor(Math.random() * 100);
+                let myUUID = Math.ceil(Math.random() * 100);
                 randomRestaurants.push(items.splice(myUUID, 1)[0]);
             }
             let results = randomRestaurants.map((obj) => obj.name)
@@ -71,7 +71,7 @@ app.get('/bld', (req, res) => {
         } else {
             let randomRestaurants = [];
             for(let i = 0; i < 6; i++){
-                let myUUID = Math.floor(Math.random() * 100);
+                let myUUID = Math.ceil(Math.random() * 100);
                 randomRestaurants.push(items.splice(myUUID, 1)[0]);
             }
             let results = randomRestaurants.map((obj) => obj.bld)
@@ -88,7 +88,7 @@ app.get('/address', (req, res) => {
         } else {
             let randomRestaurants = [];
             for(let i = 0; i < 6; i++){
-                let myUUID = Math.floor(Math.random() * 100);
+                let myUUID = Math.ceil(Math.random() * 100);
                 randomRestaurants.push(items.splice(myUUID, 1)[0]);
             }
             let results = randomRestaurants.map((obj) => obj.address)
@@ -104,7 +104,7 @@ app.get('/foodScore', (req, res) => {
         } else {
             let randomRestaurants = [];
             for(let i = 0; i < 6; i++){
-                let myUUID = Math.floor(Math.random() * 100);
+                let myUUID = Math.ceil(Math.random() * 100);
                 randomRestaurants.push(items.splice(myUUID, 1)[0]);
             }
             let results = randomRestaurants.map((obj) => obj.foodScore)

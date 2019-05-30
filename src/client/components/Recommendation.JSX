@@ -91,6 +91,7 @@ class Recommendation extends React.Component {
             {this.state.images.map((img, key) => (
                   <Restaurant pics={img} key={key}/>
             ))}
+            {/* DONT BE FANCY AND RENDER EACH RESTAURANT INDIVIDUALLY, PASSING IN ALL THEY NEED FOR STATE */}
       </div>
       )}
   }
