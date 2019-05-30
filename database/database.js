@@ -17,6 +17,7 @@ const schema = mongoose.Schema({
     address: String,
     pricing: Number,
     foodScore: Number,
+    bld: String,
     images: Array
 });
 
