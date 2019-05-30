@@ -14,8 +14,8 @@ class Carousel extends React.Component {
     return (
       <div className="Carousel">
         <Slider {...settings}> 
-            {this.props.data.images.map((img) => {
-              return <div><img src={img}/></div>
+            {this.props.data.images.map((img, key) => {
+              return <div key={key}><img src={img}/></div>
             })}
         </Slider>
       </div>
