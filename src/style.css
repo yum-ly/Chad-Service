@@ -43,4 +43,70 @@ img {
 
 .Description {
     border: 1px solid black;
+    padding: 20x 12px;
+}
+
+.Description #name {
+    color: rgb(16, 24, 32);
+    cursor: pointer;
+    font-family: Calibre-Medium;
+    font-size: 18px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.548px;
+    line-height: 20px;
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+}
+.Description #bld {
+    color: rgb(101, 102, 102);
+    cursor: pointer;
+    font-family: Calibre-Regular;
+    font-size: 15px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.195px;
+    line-height: 24px;
+    text-size-adjust: 100%;
+}
+.Description #money {
+    color: rgb(101, 102, 102);
+    cursor: pointer;
+    font-family: Calibre-Regular;
+    font-size: 15px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.195px;
+    line-height: 24px;
+    text-size-adjust: 100%;
+}
+.Description #address {
+    color: rgb(101, 102, 102);
+    cursor: pointer;
+    font-family: Calibre-Regular;
+    font-size: 15px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.195px;
+    line-height: 24px;
+    text-size-adjust: 100%;
+}
+.Description #text {
+    color: rgb(16, 24, 32);
+    cursor: pointer;
+    display: block;
+    font-family: Calibre-Regular;
+    font-size: 14px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.195px;
+    line-height: 20px;
+    padding-top: 3px;
+    text-size-adjust: 100%;
+
 }

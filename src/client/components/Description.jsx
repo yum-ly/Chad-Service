@@ -12,11 +12,12 @@ class Description extends React.Component {
             <div className="Description">
             {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, ipsa!</p> */}
             <div>
-                <h6>{this.props.data.name}</h6>
-                <h6>{this.props.data.bld}</h6>
-                <h6>$$</h6>
-                <h6>{this.props.data.foodScore}</h6>
-                <h6>{this.props.data.address}</h6>
+                <div id='name'>{this.props.data.name}</div>
+                <div id='bld'>{this.props.data.bld}</div>
+                <div id='money'>$$</div>
+                {/* <div>{this.props.data.foodScore}</div> */}
+                <div id='address'>{this.props.data.address}</div>
+                <div id='text'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, repellat.</div>
 
 
             </div>
