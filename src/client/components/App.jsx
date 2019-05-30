@@ -7,6 +7,8 @@ class App extends React.Component {
     render () {
       return (
       <div className="App">
+        <hr  />
+        <div id='nearby'>More Breakfast Nearby</div>
         < Recommendation />
       </div>
       )}
