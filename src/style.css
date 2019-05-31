@@ -54,7 +54,7 @@ hr {
 }
 
 .Carousel {
-
+    
 }
  
 .slick-prev:before{
@@ -151,6 +151,8 @@ img {
     letter-spacing: 0.195px;
     line-height: 24px;
     text-size-adjust: 100%;
+    padding-top: 3px;
+    margin-top: 3px;
 }
 
 .Description #money {
@@ -177,6 +179,15 @@ img {
     letter-spacing: 0.195px;
     line-height: 24px;
     text-size-adjust: 100%;
+}
+
+.icon {
+    color: #DC143C;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-famly: Calibre-Medium;
+    margin-top: 3px;
+    padding-top: 3px;
 }
 
 .Description #text {
