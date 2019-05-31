@@ -14,7 +14,7 @@ class App extends React.Component {
       return (
       <div className="App">
         <hr  />
-        <div id='nearby'>More Breakfast Nearby</div>
+        <div id='nearby'>More Places Nearby</div>
         < Recommendation />
       </div>
       )}

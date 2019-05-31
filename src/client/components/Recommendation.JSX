@@ -19,6 +19,10 @@ class Recommendation extends React.Component {
             // this.handleAddress();
             // this.handleFoodScore();
       }
+
+      handleClick() {
+            console.log('Hello there');
+      }
             
       // get image 
       handleGetImage () {
@@ -93,7 +97,7 @@ class Recommendation extends React.Component {
       return (
       <div className="Recommendation">
             {this.state.restaurants.map((data, key) => (
-                  <Restaurant data={data} key={key}/>
+                  <Restaurant data={data} key={key} click={this.handleClick.bind(this)}/>
             ))}
             {/* < Restaurant images={this.state.restaurant}/>  */}
             {/* < Restaurant images={this.state.images}/> 

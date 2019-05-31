@@ -16,7 +16,7 @@ class Description extends React.Component {
                 {/* <div id='money'>$$</div> */}
                 {/* <div>{this.props.data.foodScore}</div> */}
                 {/* <div id='address'>{this.props.data.address}</div> */}
-                <div><FontAwesomeIcon icon="yen-sign" className="icon"/> YUMLY RATED</div>
+                <div><FontAwesomeIcon icon="yen-sign" className="icon"/> YUMLY RATED |</div>
                 <div id='text'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, repellat.</div>
 
 
