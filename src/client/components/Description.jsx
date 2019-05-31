@@ -61,7 +61,7 @@ Has closed eyes but still sees you cat is love, cat is life kick up litter stand
                 {/* <div id='money'>$$</div> */}
                 {/* <div>{this.props.data.foodScore}</div> */}
                 {/* <div id='address'>{this.props.data.address}</div> */}
-                <div><FontAwesomeIcon icon="yen-sign" className="icon"/> YUMLY RATED | <img id="googleImg" src="https://image.flaticon.com/teams/slug/google.jpg" />{this.randomStar()}{this.randomStar()}{this.randomStar()}{this.randomStar()}{this.randomStar()}</div>
+                <div><FontAwesomeIcon icon="yen-sign" className="icon"/> YUMLY RATED <img id="googleImg" src="https://image.flaticon.com/teams/slug/google.jpg" />{this.randomStar()}{this.randomStar()}{this.randomStar()}{this.randomStar()}{this.randomStar()}</div>
                 <div id='text'> {this.randomText()} </div>
 
 
