@@ -23,7 +23,7 @@ const schema = mongoose.Schema({
 
 const restaurantData = mongoose.model('restaurants', schema);
 
-const seed = () => {fs.readFile('../data.json', (err, data) => {
+const seed = () => {fs.readFile('./databaseSeed.txt', (err, data) => {
         let parsedata = JSON.parse(data);
         parsedata.map(e => {
             const newRestaurant = new restaurantData(e)
@@ -37,6 +37,6 @@ const seed = () => {fs.readFile('../data.json', (err, data) => {
         })
     }
 )}
-// seed();
+seed();
 
 module.exports = restaurantData;
