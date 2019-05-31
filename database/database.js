@@ -37,6 +37,6 @@ const seed = () => {fs.readFile('./databaseSeed.txt', (err, data) => {
         })
     }
 )}
-seed();
+// seed();
 
 module.exports = restaurantData;
