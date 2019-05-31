@@ -4,22 +4,27 @@ import Slider from "react-slick";
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
+    <div>
     <div
+    
       className={className}
-      style={{ ...style, background: "black", color: 'white' }}
+      style={{ ...style, color: 'white', zIndex: "99", marginRight: '34px', opacity: '1'}}
       onClick={onClick}
-    />
+      />
+    </div>
   );
 }
 
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
+    <div>
     <div
       className={className}
-      style={{ ...style, background: "black", color: 'white' }}
+      style={{ ...style, color: 'white', zIndex: "99", marginLeft: '24px', opacity: '1'}}
       onClick={onClick}
-    />
+      />
+    </div>
   );
 }
 

@@ -56,23 +56,16 @@ hr {
 .Carousel {
 
 }
-
+ 
 .slick-prev:before{
-    color: purple
-
-}
-.slick-prev:before:hover{
-    color: red;
-
+    font-size: 30px;
 }
 
 .slick-next:before {
-    color: green;
+    font-size: 30px;
+
 }
 
-.slick-next:hover {
-    color: red;
-}
 
 
 img {
@@ -89,6 +82,7 @@ img {
     user-select: none;
     vertical-align: middle;
     width: 200px;
+    z-index: -1;
 }
 .slick-slider {
     height: 200px;
