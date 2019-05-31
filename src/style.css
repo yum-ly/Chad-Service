@@ -56,13 +56,22 @@ hr {
 .Carousel {
     
 }
+
+
+.slick-arrow.slick-prev:before{
+    color: black;
+}
+
+.slick-arrow.slick-next:before{
+    color: black;
+}
  
-.slick-prev:before{
-    font-size: 30px;
+.slick-prev:before {
+    font-size: 27px;
 }
 
 .slick-next:before {
-    font-size: 30px;
+    font-size: 27px;
 
 }
 
