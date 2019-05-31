@@ -13,10 +13,10 @@ class Description extends React.Component {
             {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, ipsa!</p> */}
             <div>
                 <div id='name'>{this.props.data.name}</div>
-                <div id='bld'>{this.props.data.bld} <span>&#183;</span> $$</div>
+                <div id='bld'>{this.props.data.bld} <span>&#183;</span> $$ <span>&#183;</span> {this.props.data.address}</div>
                 {/* <div id='money'>$$</div> */}
                 {/* <div>{this.props.data.foodScore}</div> */}
-                <div id='address'>{this.props.data.address}</div>
+                {/* <div id='address'>{this.props.data.address}</div> */}
                 <div id='text'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, repellat.</div>
 
 
