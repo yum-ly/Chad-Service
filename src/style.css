@@ -83,6 +83,17 @@ img {
     z-index: -1;
 }
 
+#googleImg {
+    height: 21px;
+    width: 21px;
+    display: inline-block;
+}
+
+#googStar {
+    font-size: 13px;
+    color: lightgrey;
+}
+
 .slick-slider {
     height: 200px;
 }
@@ -105,7 +116,7 @@ img {
     flex-grow: 1;
     flex-shrink: 1;
     font-family: Calibre-Regular;
-    font-size: 15px;
+    font-size: 13px;
     font-stretch: 100%;
     font-style: normal;
     font-weight: 400;
@@ -119,7 +130,6 @@ img {
     padding-right: 15px;
     padding-top: 20px;
     text-size-adjust: 100%;
-
 }
 
 .Description #name {
@@ -144,7 +154,7 @@ img {
     color: rgb(101, 102, 102);
     cursor: pointer;
     font-family: Calibre-Regular;
-    font-size: 15px;
+    font-size: 14px;
     font-stretch: 100%;
     font-style: normal;
     font-weight: 400;

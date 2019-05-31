@@ -37,7 +37,7 @@ app.get('/images', (req, res) => {
         } else {
             let randomRestaurants = [];
             for(let i = 0; i < 6; i++){
-                let myUUID = Math.ceil(Math.random() * 20);
+                let myUUID = Math.ceil(Math.random() * 60);
                 randomRestaurants.push(items.splice(myUUID, 1)[0]);
             }
             let results = randomRestaurants.map((obj) => obj)
