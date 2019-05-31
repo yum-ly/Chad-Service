@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 class Description extends React.Component {
     randomPrice () {
         let money = ' $';
-        let randNum = Math.ceil(Math.random() * 4);
+        let randNum = Math.ceil(Math.random() * 3);
         let i = 1;
         while(i < randNum){
             money+= '$';
