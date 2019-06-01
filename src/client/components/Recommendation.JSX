@@ -26,7 +26,8 @@ class Recommendation extends React.Component {
             
       // get image 
       handleGetImage () {
-            axios.get('http://ec2-52-14-174-92.us-east-2.compute.amazonaws.com/images')
+            // http://ec2-52-14-174-92.us-east-2.compute.amazonaws.com
+            axios.get('/images')
             .then( (response) => {
             // handle success
             this.setState({restaurants: response.data});

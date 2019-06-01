@@ -9,6 +9,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '../src/style.css';
 
-// ReactDOM.render(< App />, document.getElementById('root'));
+ReactDOM.render(< App />, document.getElementById('root'));
 
-window.Recommendations = App;
+// window.Recommendations = App;
