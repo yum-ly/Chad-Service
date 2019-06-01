@@ -23,7 +23,7 @@ class Recommendation extends React.Component {
       handleClick(uuid) {
             console.log('chad uuid:', uuid);
             console.log('chad props:', this.props);
-            this.props.uuidUpdateHandler(null, uuid);
+            this.props.uuidMaker(null, uuid);
       }
             
       // get image 

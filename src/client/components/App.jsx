@@ -15,7 +15,7 @@ class App extends React.Component {
       <div className="AppChad">
         <hr  />
         <div id='nearby'>More Places Nearby</div>
-        < Recommendation />
+        < Recommendation uuidMaker={this.props.uuidUpdateHandler}/>
       </div>
       )}
   }
