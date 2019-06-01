@@ -21,7 +21,7 @@ class Recommendation extends React.Component {
       }
 
       handleClick(e) {
-            console.log({e});
+            console.log(e);
       }
             
       // get image 
