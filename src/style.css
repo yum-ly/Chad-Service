@@ -2,7 +2,7 @@ body {
     background: #f1f1f2;
 }
 
-.App {
+.AppChad {
     box-sizing: border-box;
     /* color: rgb(16, 24, 32); */
     color: #333;
@@ -16,14 +16,14 @@ body {
 }
 
 /* container */
-.Recommendation {
+.AppChad .Recommendation {
     background: #f1f1f2;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.Restaurant {
+.AppChad .Restaurant {
     /* background-color: white; */
     background-color: #fbfbfb ;
     display: flex;
@@ -34,12 +34,12 @@ body {
     flex-basis: 48.5%;
 }
 
-hr {
+.AppChad hr {
     /* border: .5px solid black; */
     border: .5px solid  #333;
 }
 
-#nearby {
+.AppChad #nearby {
     box-sizing: border-box;
     /* color: rgb(16, 24, 32); */
     color:  #333;
@@ -56,30 +56,30 @@ hr {
     margin: 0;
 }
 
-.Carousel {
+.AppChad .Carousel {
     
 }
 
-.slick-arrow.slick-prev:before{
+.AppChad .slick-arrow.slick-prev:before{
     /* color: black; */
     color: #333;
 }
 
-.slick-arrow.slick-next:before{
+.AppChad .slick-arrow.slick-next:before{
     /* color: black; */
     color:  #333;
 }
  
-.slick-prev:before {
+.AppChad .slick-prev:before {
     font-size: 27px;
 }
 
-.slick-next:before {
+.AppChad .slick-next:before {
     font-size: 27px;
 
 }
 
-img {
+.AppChad img {
     box-sizing: border-box;
     /* color: rgb(33, 37, 41); */
     color:  #333;
@@ -98,7 +98,7 @@ img {
     object-fit: contain;
 }
 
-#googleImg {
+.AppChad #googleImg {
     height: 21px;
     width: 21px;
     display: inline-block;
@@ -107,22 +107,22 @@ img {
 
 }
 
-#googStar {
+.AppChad #googStar {
     font-size: 14px;
     color: lightgrey;
 }
 
-.slick-slider {
+.AppChad .slick-slider {
     height: 200px;
 }
 
-.slick-list {
+.AppChad .slick-list {
     display: inline-block;
     width: 200px;
     height: 200px;
 }
 
-.Description {
+.AppChad .Description {
     align-content: stretch;
     align-items: stretch;
     box-sizing: border-box;
@@ -151,7 +151,7 @@ img {
     text-size-adjust: 100%;
 }
 
-.Description #name {
+.AppChad .Description #name {
     /* color: rgb(16, 24, 32); */
     color:  #333;
     cursor: pointer;
@@ -166,11 +166,11 @@ img {
     text-transform: uppercase;    
 }
 
-.Description #name:hover {
+.AppChad .Description #name:hover {
     border-bottom: 1px solid maroon;
 }
 
-.Description #bld {
+.AppChad .Description #bld {
     color: rgb(101, 102, 102);
     cursor: pointer;
     font-family: Calibre-Regular;
@@ -186,7 +186,7 @@ img {
     margin-top: 3px;
 }
 
-.Description #money {
+.AppChad .Description #money {
     color: rgb(101, 102, 102);
     cursor: pointer;
     font-family: Calibre-Regular;
@@ -199,7 +199,7 @@ img {
     text-size-adjust: 100%;
 }
 
-.Description #address {
+.AppChad .Description #address {
     color: rgb(101, 102, 102);
     cursor: pointer;
     font-family: Calibre-Regular;
@@ -212,7 +212,7 @@ img {
     text-size-adjust: 100%;
 }
 
-.icon {
+.AppChad .icon {
     color: #DC143C;
     text-transform: uppercase;
     font-size: 15px;
@@ -221,7 +221,7 @@ img {
     padding-top: 3px;
 }
 
-.Description #text {
+.AppChad .Description #text {
     color: rgb(16, 24, 32);
     color:  #333;
     cursor: pointer;
