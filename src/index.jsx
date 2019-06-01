@@ -9,6 +9,6 @@ import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '../src/style.css';
 
-ReactDOM.render(< App />, document.getElementById('root'));
+// ReactDOM.render(< App />, document.getElementById('root'));
 
-// window.Recommendations = App;
+window.Recommendations = App;
