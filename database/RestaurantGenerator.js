@@ -57,6 +57,26 @@ let donutImages =
     'https://yumlyimages.s3.us-east-2.amazonaws.com/donut-2961504_960_720.jpg',
     'https://yumlyimages.s3.us-east-2.amazonaws.com/donut-2961506_960_720.jpg',
     ];
+let catImages = [
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/images+(1).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/images+(2).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/images+(3).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/images+(4).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/images+(5).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/images+(6).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/images+(7).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/images+(8).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/images.jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/download.jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/download+(9).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/download+(8).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/download+(7).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/download+(6).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/download+(5).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/download+(4).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/download+(3).jpeg',
+    'https://yumlyimages.s3.us-east-2.amazonaws.com/images+(8).jpeg',
+    ]
 
 function randomDonut () {
     let newArr = [];
@@ -66,6 +86,18 @@ function randomDonut () {
         number = Math.ceil(Math.random() * 50);
         donutPic = donutImages.slice(number, number + 1);
         newArr.push(donutPic);
+    }
+    return newArr;
+}
+
+function randomCat () {
+    let newArr = [];
+    let catPic;
+    let number;
+    while(newArr.length < 5){
+        number = Math.ceil(Math.random() * 17);
+        catPic = catImages.slice(number, number + 1);
+        newArr.push(catPic);
     }
     return newArr;
 }
@@ -130,7 +162,7 @@ class Restaurant{
                 user : faker.internet.userName(),
                 date : faker.date.recent(),
                 text : randomText(),
-                avatar : faker.image.cats(),
+                avatar : randomCat(),
             } 
         });
     }
@@ -144,7 +176,7 @@ const sampledata = new Array(100).fill(null).map((elem, i)=>{
     return temp;
 })
 
-fs.writeFile('./databaseSeed.txt', JSON.stringify(sampledata), (err)=>{
+fs.writeFile('./databaseSeed2.txt', JSON.stringify(sampledata), (err)=>{
     if(err){
         console.log(err, "ya borked it");
     }else{
