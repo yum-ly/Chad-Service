@@ -1,10 +1,13 @@
 // libraries
 const express = require('express');
-const app = express();
-const port = 3000;
+const port = 3005;
 const bodyParser = require('body-parser');
 const restaurantData = require('../database/database');
 const path = require('path');
+const cors = require('cors');
+const app = express();
+
+app.use(cors());
 
 // console.log(restaurantData);
 // // middleware
