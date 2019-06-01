@@ -20,7 +20,7 @@ class Recommendation extends React.Component {
             // this.handleFoodScore();
       }
 
-      handleClick() {
+      handleClick(e) {
             console.log({e});
       }
             
