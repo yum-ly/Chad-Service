@@ -20,16 +20,17 @@ class Recommendation extends React.Component {
             // this.handleFoodScore();
       }
 
-      componentDidUpdate(prevProps) {
-            if (this.props.uuid !== prevProps.uuid) {
-                this.handleGetImage();
-            }
-      }
+      // componentDidUpdate(prevProps) {
+      //       if (this.props.uuid !== prevProps.uuid) {
+      //           this.handleGetImage();
+      //       }
+      // }
 
       handleClick(uuid) {
             console.log('chad uuid:', uuid);
             console.log('chad props:', this.props);
             this.props.uuidMaker(null, uuid);
+            this.handleGetImage();
       }
             
       // get image 
