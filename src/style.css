@@ -3,59 +3,59 @@ body {
 }
 
 .AppChad {
-    box-sizing: border-box !important;
+    box-sizing: border-box;
     /* color: rgb(16, 24, 32); */
-    color: #333 !important;
-    font-family: Calibre-Regular !important;
-    max-width: 1480px !important;
-    padding-top: 40px !important;
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-    padding-bottom: 20px !important;
-    text-size-adjust: 100% !important;
-    position: absolute !important;
-    top: 2000px !important;
+    color: #333;
+    font-family: Calibre-Regular;
+    max-width: 1480px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    text-size-adjust: 100%;
+    position: absolute;
+    top: 2000px;
 }
 
 /* container */
 .AppChad .Recommendation {
-    background: #f1f1f2 !important;
-    display: flex !important;
-    justify-content: space-between !important;
-    flex-wrap: wrap !important;
+    background: #f1f1f2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .AppChad .Restaurant {
-    /* background-color: white !important; */
-    background-color: #fbfbfb  !important;
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    /* padding: 20px !important; */
-    margin-bottom: 40px !important;
-    flex-basis: 48.5% !important;
+    /* background-color: white; */
+    background-color: #fbfbfb ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 20px; */
+    margin-bottom: 40px;
+    flex-basis: 48.5%;
 }
 
 .AppChad hr {
-    /* border: .5px solid black !important; */
-    border: .5px solid  #333 !important;
+    /* border: .5px solid black; */
+    border: .5px solid  #333;
 }
 
 .AppChad #nearby {
-    box-sizing: border-box !important;
-    /* color: rgb(16, 24, 32) !important; */
-    color:  #333 !important;
-    font-family: Calibre-Regular !important;
-    font-size: 22px !important;
-    font-stretch: 100% !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    letter-spacing: 0.088px !important;
-    line-height: 32px !important;
-    max-width: 100% !important;
-    text-size-adjust: 100% !important;
-    padding-bottom: 20px !important;
-    margin: 0 !important;
+    box-sizing: border-box;
+    /* color: rgb(16, 24, 32); */
+    color:  #333;
+    font-family: Calibre-Regular;
+    font-size: 22px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.088px;
+    line-height: 32px;
+    max-width: 100%;
+    text-size-adjust: 100%;
+    padding-bottom: 20px;
+    margin: 0;
 }
 
 .AppChad .Carousel {
@@ -63,178 +63,178 @@ body {
 }
 
 .AppChad .slick-arrow.slick-prev:before{
-    /* color: black !important; */
-    color: #333 !important;
+    /* color: black; */
+    color: #333;
 }
 
 .AppChad .slick-arrow.slick-next:before{
-    /* color: black !important; */
-    color:  #333 !important;
+    /* color: black; */
+    color:  #333;
 }
  
 .AppChad .slick-prev:before {
-    font-size: 27px !important;
+    font-size: 27px;
 }
 
 .AppChad .slick-next:before {
-    font-size: 27px !important;
+    font-size: 27px;
 
 }
 
 .AppChad img {
-    box-sizing: border-box !important;
-    /* color: rgb(33, 37, 41) !important; */
-    color:  #333 !important;
-    display: block !important;
-    font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-    font-size: 16px !important;
-    font-weight: 400 !important;
-    height: 200px !important;
-    line-height: 24px !important;
-    text-align: left !important;
-    text-size-adjust: 100% !important;
-    user-select: none !important;
-    vertical-align: middle !important;
-    width: 200px !important;
-    z-index: -1 !important;
-    object-fit: contain !important;
+    box-sizing: border-box;
+    /* color: rgb(33, 37, 41); */
+    color:  #333;
+    display: block;
+    font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 200px;
+    line-height: 24px;
+    text-align: left;
+    text-size-adjust: 100%;
+    user-select: none;
+    vertical-align: middle;
+    width: 200px;
+    z-index: -1;
+    object-fit: contain;
 }
 
 .AppChad #googleImg {
-    height: 21px !important;
-    width: 21px !important;
-    display: inline-block !important;
-    padding-left: 3px !important;
-    border-left: 1px solid lightgrey !important;
+    height: 21px;
+    width: 21px;
+    display: inline-block;
+    padding-left: 3px;
+    border-left: 1px solid lightgrey;
 
 }
 
 .AppChad #googStar {
-    font-size: 14px !important;
-    color: lightgrey !important;
+    font-size: 14px;
+    color: lightgrey;
 }
 
 .AppChad .slick-slider {
-    height: 200px !important;
+    height: 200px;
 }
 
 .AppChad .slick-list {
-    display: inline-block !important;
-    width: 200px !important;
-    height: 200px !important;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
 }
 
 .AppChad .Description {
-    align-content: stretch !important;
-    align-items: stretch !important;
-    box-sizing: border-box !important;
-    color: rgb(16, 24, 32) !important;
-    color:  #333 !important;
-    cursor: pointer !important;
-    display: flex !important;
-    flex-basis: 100% !important;
-    flex-direction: column !important;
-    flex-grow: 1 !important;
-    flex-shrink: 1 !important;
-    font-family: Calibre-Regular !important;
-    font-size: 13px !important;
-    font-stretch: 100% !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    justify-content: center !important;
-    letter-spacing: 0.195px !important;
-    line-height: 20px !important;
-    max-height: 100% !important;
-    max-width: 65% !important;
-    padding-bottom: 20px !important;
-    padding-left: 5px !important;
-    padding-right: 15px !important;
-    padding-top: 20px !important;
-    text-size-adjust: 100% !important;
+    align-content: stretch;
+    align-items: stretch;
+    box-sizing: border-box;
+    color: rgb(16, 24, 32);
+    color:  #333;
+    cursor: pointer;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-family: Calibre-Regular;
+    font-size: 13px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    justify-content: center;
+    letter-spacing: 0.195px;
+    line-height: 20px;
+    max-height: 100%;
+    max-width: 65%;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-top: 20px;
+    text-size-adjust: 100%;
 }
 
 .AppChad .Description #name {
-    /* color: rgb(16, 24, 32) !important; */
-    color:  #333 !important;
-    cursor: pointer !important;
-    font-family: Calibre-Medium !important;
-    font-size: 18px !important;
-    font-stretch: 100% !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    letter-spacing: 1.548px !important;
-    line-height: 20px !important;
-    text-size-adjust: 100% !important;
-    text-transform: uppercase !important;    
+    /* color: rgb(16, 24, 32); */
+    color:  #333;
+    cursor: pointer;
+    font-family: Calibre-Medium;
+    font-size: 18px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.548px;
+    line-height: 20px;
+    text-size-adjust: 100%;
+    text-transform: uppercase;    
 }
 
 .AppChad .Description #name:hover {
-    border-bottom: 1px solid maroon !important;
+    border-bottom: 1px solid maroon;
 }
 
 .AppChad .Description #bld {
-    color: rgb(101, 102, 102) !important;
-    cursor: pointer !important;
-    font-family: Calibre-Regular !important;
-    font-size: 14px !important;
-    font-stretch: 100% !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    letter-spacing: 0.195px !important;
-    line-height: 24px !important;
-    text-size-adjust: 100% !important;
-    padding-top: 3px !important;
-    padding-right: 3px !important;
-    margin-top: 3px !important;
+    color: rgb(101, 102, 102);
+    cursor: pointer;
+    font-family: Calibre-Regular;
+    font-size: 14px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.195px;
+    line-height: 24px;
+    text-size-adjust: 100%;
+    padding-top: 3px;
+    padding-right: 3px;
+    margin-top: 3px;
 }
 
 .AppChad .Description #money {
-    color: rgb(101, 102, 102) !important;
-    cursor: pointer !important;
-    font-family: Calibre-Regular !important;
-    font-size: 15px !important;
-    font-stretch: 100% !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    letter-spacing: 0.195px !important;
-    line-height: 24px !important;
-    text-size-adjust: 100% !important;
+    color: rgb(101, 102, 102);
+    cursor: pointer;
+    font-family: Calibre-Regular;
+    font-size: 15px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.195px;
+    line-height: 24px;
+    text-size-adjust: 100%;
 }
 
 .AppChad .Description #address {
-    color: rgb(101, 102, 102) !important;
-    cursor: pointer !important;
-    font-family: Calibre-Regular !important;
-    font-size: 15px !important;
-    font-stretch: 100% !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    letter-spacing: 0.195px !important;
-    line-height: 24px !important;
-    text-size-adjust: 100% !important;
+    color: rgb(101, 102, 102);
+    cursor: pointer;
+    font-family: Calibre-Regular;
+    font-size: 15px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.195px;
+    line-height: 24px;
+    text-size-adjust: 100%;
 }
 
 .AppChad .icon {
-    color: #DC143C !important;
-    text-transform: uppercase !important;
-    font-size: 15px !important;
-    font-famly: Calibre-Medium !important;
-    margin-top: 3px !important;
-    padding-top: 3px !important;
+    color: #DC143C;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-famly: Calibre-Medium;
+    margin-top: 3px;
+    padding-top: 3px;
 }
 
 .AppChad .Description #text {
-    color: rgb(16, 24, 32) !important;
-    color:  #333 !important;
-    cursor: pointer !important;
-    display: block !important;
-    font-family: Calibre-Regular !important;
-    font-size: 14px !important;
-    font-stretch: 100% !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    letter-spacing: 0.195px !important;
-    line-height: 20px !important;
-    padding-top: 3px !important;
-    text-size-adjust: 100% !important;
+    color: rgb(16, 24, 32);
+    color:  #333;
+    cursor: pointer;
+    display: block;
+    font-family: Calibre-Regular;
+    font-size: 14px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.195px;
+    line-height: 20px;
+    padding-top: 3px;
+    text-size-adjust: 100%;
 }
