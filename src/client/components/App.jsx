@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Recommendation from './Recommendation.jsx';
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYenSign, faStar } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core';
 
@@ -12,9 +12,9 @@ class App extends React.Component {
 
     render () {
       return (
-      <div className="AppChad">
+      <div className="App">
         <hr  />
-        <div id='nearbyChad'>More Places Nearby</div>
+        <div id='nearby'>More Places Nearby</div>
         < Recommendation />
       </div>
       )}
