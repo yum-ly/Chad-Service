@@ -5,7 +5,7 @@ import Description from './Description.jsx';
 
 function Restaurant (props) {
       return (
-      <div className="Restaurant" onClick={props.click}>
+      <div className="RestaurantChad" onClick={props.click}>
         < Carousel data={props.data}  />
         < Description data={props.data}  />
       </div>

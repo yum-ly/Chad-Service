@@ -12,9 +12,9 @@ class App extends React.Component {
 
     render () {
       return (
-      <div className="App">
+      <div className="AppChad">
         <hr  />
-        <div id='nearby'>More Places Nearby</div>
+        <div id='nearbyChad'>More Places Nearby</div>
         < Recommendation />
       </div>
       )}
