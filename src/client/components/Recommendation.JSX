@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Restaurant from './Restaurant.jsx';
 import axios from 'axios';
-
 
 class Recommendation extends React.Component {
       constructor(props) {
@@ -14,17 +12,7 @@ class Recommendation extends React.Component {
             
       componentDidMount(){
             this.handleGetImage();
-            // this.handleName();
-            // this.handleBLD();
-            // this.handleAddress();
-            // this.handleFoodScore();
       }
-
-      // componentDidUpdate(prevProps) {
-      //       if (this.props.uuid !== prevProps.uuid) {
-      //           this.handleGetImage();
-      //       }
-      // }
 
       handleClick(uuid) {
             console.log('chad uuid:', uuid);
@@ -33,7 +21,7 @@ class Recommendation extends React.Component {
             this.handleGetImage();
       }
             
-      // get image 
+      // get data 
       handleGetImage () {
             axios.get('http://ec2-52-14-174-92.us-east-2.compute.amazonaws.com/images')
             .then( (response) => {
@@ -45,62 +33,6 @@ class Recommendation extends React.Component {
             console.log('error getting image:', error);
             })
       }
-      // // get name
-      // handleName(){
-      //       axios.get('/name')
-      //       .then( (response) => {
-      //       let myData = this.state.restaurant;
-      //       myData.splice(1, 1, response.data);
-      //       // handle success
-      //       this.setState({restaurant: myData});
-      //       })
-      //       .catch( (error) => {
-      //       // handle error
-      //       console.log('error getting name:', error);
-      //       })
-      // }
-      // // get bld
-      // handleBLD(){
-      //       axios.get('/bld')
-      //       .then( (response) => {
-      //       let myData = this.state.restaurant;
-      //       myData.splice(2, 1, response.data);
-      //       // handle success
-      //       this.setState({restaurant: myData});
-      //       })
-      //       .catch( (error) => {
-      //       // handle error
-      //       console.log('error getting bld:', error);
-      //       })
-      // }
-      // // get address
-      // handleAddress(){
-      //       axios.get('/address')
-      //       .then( (response) => {
-      //       let myData = this.state.restaurant;
-      //       myData.splice(3, 1, response.data);
-      //       // handle success
-      //       this.setState({restaurant: myData});
-      //       })
-      //       .catch( (error) => {
-      //       // handle error
-      //       console.log('error getting address:', error);
-      //       })
-      // }
-      // // get foodScore
-      // handleFoodScore(){
-      //       axios.get('/foodScore')
-      //       .then( (response) => {
-      //       let myData = this.state.restaurant;
-      //       myData.splice(4, 1, response.data);
-      //       // handle success
-      //       this.setState({restaurant: myData});
-      //       })
-      //       .catch( (error) => {
-      //       // handle error
-      //       console.log('error getting foodScore:', error);
-      //       })
-      // }
 
       render() {
       return (
@@ -108,12 +40,6 @@ class Recommendation extends React.Component {
             {this.state.restaurants.map((data, key) => (
                   <Restaurant data={data} key={key} click={this.handleClick.bind(this)}/>
             ))}
-            {/* < Restaurant images={this.state.restaurant}/>  */}
-            {/* < Restaurant images={this.state.images}/> 
-            < Restaurant images={this.state.images}/> 
-            < Restaurant images={this.state.images}/> 
-            < Restaurant images={this.state.images}/> 
-            < Restaurant images={this.state.images}/>  */}
       </div>
       )}
   }

@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Description extends React.Component {
@@ -51,16 +49,11 @@ Has closed eyes but still sees you cat is love, cat is life kick up litter stand
     }
 
     render(props){
-
         return (
             <div className="Description" onClick={()=> {return this.props.click(this.props.data.uuid)}}>
-            {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, ipsa!</p> */}
             <div>
                 <div id='name'>{this.props.data.name}</div>
                 <div id='bld'>{this.props.data.bld} <span>&#183;</span> {this.props.data.address} <span>&#183;</span> {this.randomPrice()}</div>
-                {/* <div id='money'>$$</div> */}
-                {/* <div>{this.props.data.foodScore}</div> */}
-                {/* <div id='address'>{this.props.data.address}</div> */}
                 <div><FontAwesomeIcon icon="yen-sign" className="icon"/> YUMLY RATED <img id="googleImg" src="https://image.flaticon.com/teams/slug/google.jpg" />{this.randomStar()}{this.randomStar()}{this.randomStar()}{this.randomStar()}{this.randomStar()}</div>
                 <div id='text'> {this.randomText()} </div>
 

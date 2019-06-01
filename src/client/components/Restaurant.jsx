@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Carousel from './Carousel.jsx';
 import Description from './Description.jsx';
 
