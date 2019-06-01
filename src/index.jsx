@@ -11,4 +11,4 @@ import '../src/style.css';
 
 // ReactDOM.render(< App />, document.getElementById('root'));
 
-window.App = App;
+window.Recommendations = App;

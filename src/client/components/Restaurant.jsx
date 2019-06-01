@@ -7,7 +7,7 @@ function Restaurant (props) {
       return (
       <div className="RestaurantChad" onClick={props.click}>
         < Carousel data={props.data}  />
-        {/* < Description data={props.data}  /> */}
+        < Description data={props.data}  />
       </div>
       )
   }
