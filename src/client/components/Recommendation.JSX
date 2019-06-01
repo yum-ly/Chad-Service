@@ -20,8 +20,9 @@ class Recommendation extends React.Component {
             // this.handleFoodScore();
       }
 
-      handleClick(e) {
-            console.log('chad uuid:', e);
+      handleClick(uuid) {
+            console.log('chad uuid:', uuid);
+            this.props.uuidUpdateHandler(null, uuid);
       }
             
       // get image 

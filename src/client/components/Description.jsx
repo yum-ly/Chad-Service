@@ -53,7 +53,7 @@ Has closed eyes but still sees you cat is love, cat is life kick up litter stand
     render(props){
 
         return (
-            <div className="Description" onClick={(e)=> {return this.props.click(this.props.data.uuid)}}>
+            <div className="Description" onClick={()=> {return this.props.click(this.props.data.uuid)}}>
             {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, ipsa!</p> */}
             <div>
                 <div id='name'>{this.props.data.name}</div>
