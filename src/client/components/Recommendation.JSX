@@ -31,7 +31,7 @@ class Recommendation extends React.Component {
             .then( (response) => {
             // handle success
             this.setState({restaurants: response.data});
-            window.scrollTo(0,0);
+            window.scrollTo(0, 400);
             })
             .catch( (error) => {
             // handle error
