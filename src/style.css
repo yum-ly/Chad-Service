@@ -1,5 +1,8 @@
 body {
     background: #f1f1f2;
+    
+    height: 100%; overflow:auto; 
+    height: 100%; 
 }
 
 .AppChad {
@@ -17,6 +20,7 @@ body {
     top: 1950px;
     left: 200px;
 }
+
 
 /* container */
 .AppChad .Recommendation {
