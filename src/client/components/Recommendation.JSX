@@ -15,14 +15,13 @@ class Recommendation extends React.Component {
       }
 
       handleClick(uuid) {
-            console.log('chad uuid:', uuid);
-            console.log('chad props:', this.props);
+            // console.log('chad uuid:', uuid);
+            // console.log('chad props:', this.props);
             
             this.props.uuidMaker(null, uuid);
             // window.onbeforeunload = function(){ window.scrollTo(0,0); }
             this.handleGetImage();
             // setTimeout(()=>(window.location('#')),0);
-
       }
             
       // get data 
@@ -31,7 +30,7 @@ class Recommendation extends React.Component {
             .then( (response) => {
             // handle success
             this.setState({restaurants: response.data});
-            window.scrollTo(0, 400);
+            // window.scrollTo(0, 400);
             })
             .catch( (error) => {
             // handle error
