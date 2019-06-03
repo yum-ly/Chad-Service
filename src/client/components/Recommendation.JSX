@@ -21,7 +21,7 @@ class Recommendation extends React.Component {
             this.props.uuidMaker(null, uuid);
             // window.onbeforeunload = function(){ window.scrollTo(0,0); }
             this.handleGetImage();
-            setTimeout(()=>(window.scrollTo(0, 0)),0);
+            setTimeout(()=>(window.location('#')),0);
 
       }
             
