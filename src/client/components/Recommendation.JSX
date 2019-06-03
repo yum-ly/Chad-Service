@@ -19,7 +19,8 @@ class Recommendation extends React.Component {
             console.log('chad props:', this.props);
 
             this.props.uuidMaker(null, uuid);
-            window.onbeforeunload = function(){ window.scrollTo(0,0); }
+            window.scrollTo(0,0);
+            // window.onbeforeunload = function(){ window.scrollTo(0,0); }
             this.handleGetImage();
       }
             
