@@ -21,7 +21,7 @@ class Recommendation extends React.Component {
             this.props.uuidMaker(null, uuid);
             // window.onbeforeunload = function(){ window.scrollTo(0,0); }
             this.handleGetImage();
-            setTimeout(()=>(window.location('#')),0);
+            // setTimeout(()=>(window.location('#')),0);
 
       }
             
@@ -31,6 +31,7 @@ class Recommendation extends React.Component {
             .then( (response) => {
             // handle success
             this.setState({restaurants: response.data});
+            window.scrollTo(0,0);
             })
             .catch( (error) => {
             // handle error
